@@ -1,0 +1,98 @@
+body{
+}
+.slider-container{
+    margin: 8px auto 10px;
+    width: 100%;
+    position: relative;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    padding: 0;
+    background:#C6C6C6;
+    outline: none;
+    border-radius: 3px;
+}
+
+.slider:disabled{
+    cursor: not-allowed;
+}
+
+.slider:disabled::-webkit-slider-thumb{
+    cursor: not-allowed;
+}
+
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+}
+
+
+.selector{
+    height: 100px;
+    width: 15px;
+    position: absolute;
+    bottom: -1px;
+    left: 0%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.select-btn{
+    height: 15px;
+    width: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2px;
+}
+ 
+.progress-bar{
+    padding: 0;
+    width: 0%;
+    height: 6px;
+    background: #ffd200;
+    border-radius: 3px;
+    position: absolute;
+    top: 11.5px;
+    left: 0px;
+}
+
+.red .progress-bar{
+    background: #FC0000;
+}
+
+.red .select-btn{
+    background: #FC0000;
+}
+
+.orange .progress-bar{
+    background: #FF7B23;
+}
+
+.orange .select-btn{
+    background: #FF7B23;
+}
+
+.yellow .progress-bar{
+    background: #FFED00;
+}
+
+.yellow .select-btn{
+    background: #FFED00;
+}
+
+.green .progress-bar{
+    background: #2DD620;
+}
+
+.green .select-btn{
+    background: #2DD620;
+}

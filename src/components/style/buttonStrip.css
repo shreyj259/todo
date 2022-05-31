@@ -1,0 +1,64 @@
+.btn-container{
+    display: flex;
+    width: 180px;
+}
+
+.save-container,.update-container,.delete-container{
+    display: flex;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    padding: 6px 0;
+    margin: 10px 0 0;
+}
+
+.save-container img, .update-container img, .delete-container img{
+    width: 18px;
+}
+
+.save-container, .update-container{
+    border-right: 2px solid white;
+}
+
+
+.red .btn-container button{
+    background: #FC0000;
+    cursor: pointer;
+}
+
+.orange .btn-container button{
+    background: #FF7B23;
+    cursor: pointer;
+}
+
+.yellow .btn-container button{
+    background: #FFED00;
+    cursor: pointer;
+}
+
+.green .btn-container button{
+    background: #2DD620;
+    cursor: pointer;
+}
+
+.red .btn-container button:disabled{
+    background: #BB3C3C;
+    cursor: not-allowed;
+}
+
+.orange .btn-container button:disabled{
+    background: #CB763E;
+    cursor: not-allowed;
+}
+
+.yellow .btn-container button:disabled{
+    background: #C2B840;
+    cursor: not-allowed;
+}
+
+.green .btn-container button:disabled{
+    background: #4EBB46;
+    cursor: not-allowed;
+}
